@@ -1,0 +1,36 @@
+id: agentic-api-contracts-api
+name: Agentic API Contracts API
+version: 0.1.0
+type: contracts
+installsInto: app/contracts
+
+ownedPaths:
+  - app/contracts
+
+dependencies: []
+
+optionalDependencies:
+  - agentic-clean-backend
+  - agentic-react-spa
+  - agentic-flutter-client
+
+provides:
+  - api-contracts
+  - api-specification-foundation
+  - interface-definition-layer
+
+requires:
+  - contract-format-standard
+  - contract-validation-tooling
+
+postInstallChecks:
+  - contract files exist in target path
+  - contract validation command runs
+  - contract structure is internally consistent
+
+tags:
+  - agentic
+  - starter
+  - contracts
+  - api
+  - specification
